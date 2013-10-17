@@ -1,0 +1,29 @@
+/*
+*
+* Overriding core styles
+*
+*/
+
+/**
+ * Don't use a minimum width so that responsive elements can be tested on small
+ * screens
+ */
+.source_example {
+  min-width: 0;
+}
+
+/**
+ * make source example containers stretch the full width of the content area
+ */
+.source_section__open .source_example {
+  display: block;
+}
+
+/**
+ * increase main content area so that wider screen elements may be tested
+ * (+-1024px now)
+ */
+.source_col-main {
+  max-width: 1620px;
+}
+
