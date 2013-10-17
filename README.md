@@ -16,4 +16,4 @@ Pew pew pew!
 
 ### License
 
-MIT: http://larrybotha.mit-license.org/
+MIT: http://fixate.mit-license.org/
