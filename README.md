@@ -1,6 +1,6 @@
 # Source.js Boilerplate
 
-A starting point for your specs on new [Source.js](https://github.com/sourcejs/Source) projects.
+A starting point for your specs on new projects using [Source.js](https://github.com/sourcejs/Source).
 
 ## Purpose
 
