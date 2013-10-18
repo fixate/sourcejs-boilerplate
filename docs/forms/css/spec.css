@@ -1,0 +1,18 @@
+.g {
+  position: relative;
+  line-height: 3;
+  text-align: center;
+  margin-bottom: 1em;
+  z-index: 10;
+}
+
+.g:before {
+  position: absolute;
+  content: "";
+  border: 1px solid #f1f1f1;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 0;
+}
