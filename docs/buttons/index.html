@@ -1,0 +1,111 @@
+﻿<!DOCTYPE html>
+<!--[if IE 7]>     <html class="ie7"> <![endif]-->
+<!--[if IE 8]>     <html class="ie8"> <![endif]-->
+<!--[if IE 9]>     <html class="ie9"> <![endif]-->
+<!--[if gt IE 9]><!--> <html> <!--<![endif]-->
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=10">
+  <title>Buttons</title>
+
+  <meta name="author" content="Spec author">
+
+  <!-- Your project styles -->
+    <!--<link href="/data/docs/project.css" rel="stylesheet">-->
+  <!-- /Your project styles -->
+
+  <link rel="stylesheet" href="css/spec.css">
+
+  <!-- Source default resources -->
+    <link href="/core/css/core.css" rel="stylesheet">
+
+    <!--[if lt IE 9]><script src="/core/js/lib/html5shiv.js"></script><![endif]-->
+    <script data-main="/core/js/source" src="/core/js/lib/require-jquery.js"></script>
+  <!-- /Source default resources -->
+</head>
+<body>
+
+  <div class="source_container"><div class="source_main source_col-main" role="main">
+
+    <h1>Buttons</h1>
+
+    <p>Buttons should be styled on the following elements for consistency:</p>
+    <ul>
+      <li>anchors</li>
+      <li>buttons</li>
+      <li>labels</li>
+      <li>submit inputs</li>
+    </ul>
+
+    <section class="source_section">
+      <h2>Defaults</h2>
+      <div class="source_example">
+        <div>
+          <a class="btn" href="javascript:void(0)">anchor</a>
+
+          <button class="btn">button</button>
+
+          <label class="btn">label</label>
+
+          <input class="btn" type="submit" value="submit">
+        </div>
+        <br>
+        <div>
+          <a class="btn btn--selected" href="javascript:void(0)">anchor .btn--selected</a>
+
+          <button class="btn btn--selected">button .btn--selected</button>
+
+          <label class="btn btn--selected">label .btn--selected</label>
+
+          <input class="btn btn--selected" type="submit" value="submit .btn--selected">
+        </div>
+      </div>
+    </section>
+
+    <section class="source_section">
+      <h2>Full Width Buttons</h2>
+
+      <p>Full width buttons use the <span class="source_hl">.btn--full</span> modifier</p>
+      <div class="source_example">
+        <div>
+          <a class="btn btn--full" href="javascript:void(0)">anchor</a>
+          <br>
+          <br>
+
+          <button class="btn btn--full">button</button>
+          <br>
+          <br>
+
+          <label class="btn btn--full">label</label>
+          <br>
+          <br>
+
+          <input class="btn btn--full" type="submit" value="submit">
+          <br>
+          <br>
+        </div>
+        <div>
+          <a class="btn btn--full btn--selected" href="javascript:void(0)">anchor .btn--selected</a>
+          <br>
+          <br>
+
+          <button class="btn btn--full btn--selected">button .btn--selected</button>
+          <br>
+          <br>
+
+          <label class="btn btn--full btn--selected">label .btn--selected</label>
+          <br>
+          <br>
+
+          <input class="btn btn--full btn--selected" type="submit" value="submit .btn--selected">
+          <br>
+          <br>
+        </div>
+      </div>
+    </section>
+
+  </div></div>
+
+</body>
+</html>
+
