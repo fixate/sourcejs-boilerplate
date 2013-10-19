@@ -2,39 +2,15 @@ jQuery(function($) {
 
 	'use strict';
 
-	//	*****************************************************************************
-	//	TinyMCE
-	//	*****************************************************************************
-
-	// function to allow indentation of lists in tinyMCE using tab
-	// key: http://mopo.ws/PI8CTq
-	function fixTinyMCETabIssue(inst) {
-		inst.onKeyDown.add(function(inst, e) {
-			// Firefox uses the e.which event for keypress
-			// While IE and others use e.keyCode, so we look for both
-			if (e.keyCode) code = e.keyCode;
-			else if (e.which) code = e.which;
-			if(code == 9 && !e.altKey && !e.ctrlKey) {
-				// toggle between Indent and Outdent command, depending on if SHIFT is pressed
-				if (e.shiftKey) inst.execCommand('Outdent');
-				else inst.execCommand('Indent');
-				// prevent tab key from leaving editor in some browsers
-				if(e.preventDefault) {
-						e.preventDefault();
-				}
-				return false;
-			}
-		});
-	}
-
-
-
   //	*****************************************************************************
   //	TinyMCE
   //	*****************************************************************************
   tinymce.init({
     selector: "textarea.tinymce"
   });
+
+
+
 
 
 	//	*****************************************************************************
@@ -95,25 +71,35 @@ jQuery(function($) {
 					"email": "katherine@nichols.gn"
 				}
 			];
+
+
+
+
+
 	//	-----------------------------------------------------------------------------
 	//	Autocomplete1
 	//	-----------------------------------------------------------------------------
-
-
 	$('.typeahead-1').typeahead({
 		name: 'first',
 		local: typeaheadNames
 	});
 
+
+
+
+
 	//	-----------------------------------------------------------------------------
 	//	typeahead-2
 	//	-----------------------------------------------------------------------------
-
 	$('.typeahead-2').typeahead({
 		name: 'second',
 		valueKey: ['name'],
 		local: typeaheadNamesAges
 	});
+
+
+
+
 
 	//	-----------------------------------------------------------------------------
 	//	Autocomplete3
@@ -150,17 +136,21 @@ jQuery(function($) {
 	// });
 
 
+
+
+
 	//	*****************************************************************************
 	//	Date Picker
 	//	*****************************************************************************
-  $(document).ready(function() {
-    var picker = new Pikaday({ field: document.getElementById('datepicker') });
-  });
+  var picker = new Pikaday({ field: document.getElementById('datepicker') });
+
+
+
 
 
 	//	*****************************************************************************
-		//	Dropzone File Uploads
-		//	*****************************************************************************
+  //	Dropzone File Uploads
+  //	*****************************************************************************
 	if ($('.dropzone').length) {
 		Dropzone.autoDiscover = false;
 		var myDropzone = new Dropzone("form.dropzone", {
@@ -169,9 +159,14 @@ jQuery(function($) {
 		});
 	}
 
+
+
+
+
 	// READY
 	// Remove .no-js
 	$('.no-js').removeClass('no-js');
 
 });
+
 
