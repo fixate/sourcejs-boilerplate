@@ -80,7 +80,7 @@ jQuery(function($) {
 	//	Autocomplete1
 	//	-----------------------------------------------------------------------------
 	$('.typeahead-1').typeahead({
-		name: 'first',
+		name: 'autocomplete-1',
 		local: typeaheadNames
 	});
 
@@ -92,48 +92,15 @@ jQuery(function($) {
 	//	typeahead-2
 	//	-----------------------------------------------------------------------------
 	$('.typeahead-2').typeahead({
-		name: 'second',
+		name: 'autocomplete-2',
 		valueKey: ['name'],
-		local: typeaheadNamesAges
+		local: typeaheadNamesAges,
+    template: [
+    '<span>{{name}}, {{age}}<br>',
+    '<span>{{email}}</span>'
+    ].join(''),
+    engine: Hogan
 	});
-
-
-
-
-
-	//	-----------------------------------------------------------------------------
-	//	Autocomplete3
-	//	-----------------------------------------------------------------------------
-	// $(".typeahead-3").typeahead({
-	// 	name: 'third',
-	// 	local: typeaheadNamesAges,
-	// 	template: [
-	// 		'<span>{{name}}, {{age}}<br>',
-	// 		'<span>{{email}}</span>'
-	// 	].join(''),
-	// 	engine: Hogan
-	// 	})
-	// .data("autocomplete")._renderItem = function(ul, item) {
-	// 	return $("<li></li>")
-	// 		.data("item.autocomplete", item)
-	// 		.append(
-	// 			"<a class='mblock cf'>" +
-	// 				"<img class='mblock-alpha' src='http://placekitten.com/20/20'/>" +
-	// 				"<div class='mblock-beta'>" +
-	// 					"<span>" + item.label + "</span><br><small>" + item.desc + "</small></div></a>")
-	// 		.appendTo(ul);
-	// };
-
-	// $(".token-list").on("click", function(e){
-	// 	$(this).find(".token-list-input").focus();
-	// });
-
-	// $("#autocomplete3").on("keydown", function(e){
-	// 	$this = $(this);
-	// 	if ($this.parent().prev() && $this.val() === "" && e.keyCode === 8) {
-	// 		$this.parent().prev().remove();
-	// 	}
-	// });
 
 
 
