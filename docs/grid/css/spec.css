@@ -1,12 +1,13 @@
-.g {
+.source_grid_content {
   position: relative;
+  display: block;
   line-height: 3;
   text-align: center;
   margin-bottom: 1em;
   z-index: 10;
 }
 
-.g:before {
+.source_grid_content:before {
   position: absolute;
   content: "";
   border: 1px solid #f1f1f1;
@@ -16,3 +17,4 @@
   left: 0;
   z-index: 0;
 }
+
