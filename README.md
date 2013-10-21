@@ -19,7 +19,7 @@ cd Source
 npm install
 grunt init
 
-node app.js
+sudo node app.js
 ```
 
 You may need to `sudo` node if you don't have root access.
