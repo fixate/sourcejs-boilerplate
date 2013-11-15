@@ -7,7 +7,7 @@ node_modules
 /data/pages_tree.json
 
 # Source engine
-/data/docs
+/data
 /core
 /test
 /plugins
