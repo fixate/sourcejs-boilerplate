@@ -11,7 +11,7 @@
     }
   }
 
-  $('.menu-toggle').on('click touch', function(e) {
+  $('.js-menu-toggle').on('click touch', function(e) {
     e.preventDefault();
     toggle(this);
   });
