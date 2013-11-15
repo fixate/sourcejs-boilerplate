@@ -2,7 +2,7 @@
 
   function toggle(el) {
     var $el = $(el),
-        activeClass = 'menu-toggle--active';
+        activeClass = 'is-active';
 
     if ($el.hasClass(activeClass)) {
       $el.removeClass(activeClass);
