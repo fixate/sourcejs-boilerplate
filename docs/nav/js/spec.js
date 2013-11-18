@@ -1,19 +1,30 @@
 (function(window, $) {
 
-  function toggle(el) {
-    var $el = $(el),
-        activeClass = 'is-active';
+  'user_strict';
 
-    if ($el.hasClass(activeClass)) {
-      $el.removeClass(activeClass);
-    } else {
-      $el.addClass(activeClass);
+  $.fn.toggler = function() {
+    var $this = $(this),
+        $target = $('.'+get_target()),
+        activeClass = 'is-open';
+
+    function do_toggle() {
+      if ($target.hasClass(activeClass)) {
+        $target.removeClass(activeClass);
+      } else {
+        $target.addClass(activeClass);
+      }
     }
+
+    function get_target() {
+      return $this.data('target');
+    }
+
+    $this.on('click touch', function(e) {
+      e.preventDefault();
+      do_toggle(this);
+    });
   }
 
-  $('.js-menu-toggle').on('click touch', function(e) {
-    e.preventDefault();
-    toggle(this);
-  });
+  $('.js-menu-toggle').toggler();
 
 }(this, this.jQuery));
