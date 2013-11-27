@@ -4,10 +4,11 @@
 
   $.fn.toggler = function() {
     var $this = $(this),
-        $target = $('.'+get_target()),
         activeClass = 'is-open';
 
-    function do_toggle() {
+    function do_toggle(el) {
+      $target = $('.' + get_target(el));
+
       if ($target.hasClass(activeClass)) {
         $target.removeClass(activeClass);
       } else {
@@ -15,8 +16,8 @@
       }
     }
 
-    function get_target() {
-      return $this.data('target');
+    function get_target(el) {
+      return $(el).data('target');
     }
 
     $this.on('click touch', function(e) {
