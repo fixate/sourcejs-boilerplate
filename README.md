@@ -19,7 +19,7 @@ cd Source
 npm install
 grunt init
 
-sudo node app.js
+node app.js
 ```
 
 Overwrite the contents of `public/` with the contents of this repo, and start writing your own specs.
