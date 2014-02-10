@@ -5,6 +5,11 @@
 */
 
 /**
+ * Don't set a minimum width on the body
+ */
+body { min-width: 0; }
+
+/**
  * Don't use a minimum width so that responsive elements can be tested on small
  * screens
  */
